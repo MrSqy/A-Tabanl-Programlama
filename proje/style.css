@@ -1,0 +1,388 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:7px;
+}
+
+body{
+    font-family: "Roboto Mono", serif;
+    font-size: 2rem; /*  2x10 px  */
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+p{
+    padding: 1.6rem 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#categories{
+        background-color: black;
+        width: 100%;
+        height: 4.5rem;
+        position: fixed;
+        z-index: 1;
+        border: 2px solid gray;
+        opacity: 40%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+}
+
+#buttons{
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    margin-top: 0.5rem;
+}
+
+#buttons #button1{
+    margin: 0rem 6.6rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25%;
+    color: black;
+    background-color: #fff;
+    transition: 0.8s;
+    font-size: 2rem;
+    padding: .3rem 0;
+    cursor: grab;
+}
+#buttons #button1:hover{
+    border: 2px solid cyan;
+    border-radius: 25%;
+    color: white;
+    background-color: black;
+}
+
+#buttons #button2{
+    margin: 0rem 6.6rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25%;
+    color: black;
+    background-color: #fff;
+    transition: 0.8s;
+    font-size: 2rem;
+    padding: .4rem 0;
+    cursor: grab;
+}
+#buttons #button2:hover{
+    border: 2px solid cyan;
+    border-radius: 25%;
+    color: white;
+    background-color: black;
+}
+
+#buttons #button3{
+    margin: 0rem 6.6rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25%;
+    color: black;
+    background-color: #fff;
+    transition: 0.8s;
+    cursor: grab;
+}
+#buttons #button3:hover{
+    border: 2px solid cyan;
+    border-radius: 25%;
+    color: white;
+    background-color: black;
+}
+
+#buttons #button4{
+    margin: 0rem 6.6rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25%;
+    color: black;
+    background-color: #fff;
+    transition: 0.8s;
+    cursor: grab;
+}
+#buttons #button4:hover{
+    border: 2px solid cyan;
+    border-radius: 25%;
+    color: white;
+    background-color: black;
+}
+
+#buttons #button5{
+    margin: 0rem 6.6rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25%;
+    color: black;
+    background-color: #fff;
+    transition: 0.8s;
+}
+
+#buttons #button5:hover{
+    border: 2px solid cyan;
+    border-radius: 25%;
+    color: white;
+    background-color: black;
+}
+
+#scrollButton{
+    border: 1px solid black;
+    border-radius: 16%;
+    background-color: gray;
+    transition: 0.8s;
+    cursor:grab;
+    padding: 2rem;
+    font-size: 2.6rem;
+}
+
+#scrollButton:hover{
+    border: 1px solid cyan;
+    border-radius: 16%;
+    background-color: black;
+    transition: 0.8s;
+    color: white;
+}
+header{
+    height: 46rem;
+}
+
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+header .bg-image{
+    position: absolute;
+    background-image: url(images/maintop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.btn{
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    border: 1px solid #666;
+    border-radius: 10%;
+    padding: 1.6rem 3.2rem;
+    margin: .5rem 0;
+    transition: all 0.4s;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color:red
+}
+
+#section-a{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem 0;
+}
+
+#section-b{
+    padding: 2rem;
+}
+
+#section-b ul{
+    list-style: none;
+}
+
+#section-b li{
+    background:#fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+.col p{
+    font-size: 1.2rem;
+}
+#important{
+    color: crimson;
+    text-transform: uppercase;
+}
+.col-content{
+    padding: 1.5rem;
+}
+
+#section-c {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+    text-align: left;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+  
+#section-c div#explain {
+    flex: 1; 
+    margin-left: 3rem; 
+    text-align: left;
+    overflow: auto;
+}
+
+#section-c div{
+    display: inline-block;
+}
+
+#section-c ul{
+    padding-top: 55px;
+}
+#section-c li{
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+#section-c li a{
+    color: rgb(128, 0, 128, 0.4);
+}
+
+#section-c #a{
+    border: 2px solid black;
+    border-radius: 16%;
+    background-color: white;
+    transition: 0.8s;
+    cursor:grab;
+}
+#section-c #a:hover{
+    border: 2px solid cyan;
+    border-radius: 16%;
+    background-color: black;
+    transition: 0.8s;
+    color: white;
+}
+
+#section-c #b{
+    border: 2px solid black;
+    border-radius: 16%;
+    background-color: white;
+    transition: 0.8s;
+    cursor:grab;
+}
+#section-c #b:hover{
+    border: 2px solid cyan;
+    border-radius: 16%;
+    background-color: black;
+    transition: 0.8s;
+    color: white;
+}
+
+#section-c #c{
+    border: 2px solid black;
+    border-radius: 16%;
+    background-color: white;
+    transition: 0.8s;
+    cursor:grab;
+}
+#section-c #c:hover{
+    border: 2px solid cyan;
+    border-radius: 16%;
+    background-color: black;
+    transition: 0.8s;
+    color: white;
+}
+
+#section-c #d{
+    border: 2px solid black;
+    border-radius: 16%;
+    background-color: white;
+    transition: 0.8s;
+    cursor:row-resize;
+    cursor: grab;
+}
+#section-c #d:hover{
+    border: 2px solid cyan;
+    border-radius: 16%;
+    background-color: black;
+    transition: 0.8s;
+    color: white;
+}
+
+#section-c #e{
+    border: 2px solid black;
+    border-radius: 16%;
+    background-color: white;
+    transition: 0.8s;
+    cursor:grab;
+}
+#section-c #e:hover{
+    border: 2px solid cyan;
+    border-radius: 16%;
+    background-color: black;
+    transition: 0.8s;
+    color: white;
+}
+
+#section-c #f{
+    border: 2px solid black;
+    border-radius: 16%;
+    background-color: white;
+    transition: 0.8s;
+    cursor:grab;
+}
+#section-c #f:hover{
+    border: 2px solid cyan;
+    border-radius: 16%;
+    background-color: black;
+    transition: 0.8s;
+    color: white;
+}
+
+
+#section-d .box{
+    padding: 5rem;
+
+}
+
+#section-d .box:first-child{
+    background-color: darkslategray;
+}
+
+footer{
+    padding: 4rem;
+    background: black;
+}
+
+footer a{
+    color: rebeccapurple;
+}
+
+@media screen and (min-width:800px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    html{
+        font-size: 11px;
+    }
+    
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+    #section-d .box{
+        width: 49%;
+        display: inline-block;
+    }
+}
+
+
+
+
+
